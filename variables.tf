@@ -20,15 +20,3 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "key_name" {
-    description = "Name of the key pair"
-    type = string
-    default = "new_key_pair"
-  
-}
-
-variable "new_key_pair_path" {
-    description = "Key pair file path"
-    type = string
-    default = "new_key_valuefile.pub"
-}

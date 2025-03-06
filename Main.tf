@@ -73,7 +73,6 @@ resource "aws_instance" "testmodule" {
   instance_type = var.instance_type
   subnet_id     = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.instance.id]
-  key_name = var.key_name
   tags = {
     Name = local.instance_name
   }
