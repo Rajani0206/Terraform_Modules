@@ -1,7 +1,9 @@
 variable "aws_region" {
   description = "The AWS region to launch the instance"
   type        = string
+  default  = "ap-south-1"
 }
+
 
 variable "vpc_cidr_block" {
   description = "CIDR block for the VPC"
